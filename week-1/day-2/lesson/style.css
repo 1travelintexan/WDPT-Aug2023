@@ -1,0 +1,19 @@
+p {
+  width: 10rem;
+  border-color: #17212e;
+  border-style: solid;
+  border-width: 15px 5px 2px 5px;
+  border-left-width: 35px;
+  padding: 15px 5px 2px 5px;
+  margin: 15px 5px 25px 5px;
+  padding-bottom: 25vw;
+  box-sizing: border-box;
+}
+
+div {
+  width: 200px;
+}
+
+body {
+  font-size: 20px;
+}
