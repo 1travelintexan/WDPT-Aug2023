@@ -2,77 +2,78 @@
 const students = ["Ian", "Abdul", `Doreen`, "Chloe"];
 const ourString = `Here are some cool students, Chloe, Dinah and Ian`;
 
-// //.split will 'split' a string to create an array, .join() does the opposite, it takes an array and makes a string
-// let ourArray = ourString.split(",");
-// ourArray.shift();
-// ourArray = ourArray.join("");
-// console.log("Here is our new array: ", ourArray);
+//.split will 'split' a string to create an array, .join() does the opposite, it takes an array and makes a string
+let ourArray = ourString.split(",");
+ourArray.shift();
+ourArray = ourArray.join("");
+console.log("Here is our new array: ", ourArray);
 
-// console.log("All of the students", students);
+console.log("All of the students", students);
 
-// //.pop removes the last element from an array
-// students.pop();
-// console.log("after the .pop()", students);
+//<===========================Array Methods =========================>
+//.pop removes the last element from an array
+students.pop();
+console.log("after the .pop()", students);
 
-// //shift removes the first element from an array
-// students.shift();
-// console.log("after the .shift()", students);
+//shift removes the first element from an array
+students.shift();
+console.log("after the .shift()", students);
 
-// //.push adds an element to back of an array
-// students.push(true, "Dinah", 37);
-// console.log("After .push", students);
+//.push adds an element to back of an array
+students.push(true, "Dinah", 37);
+console.log("After .push", students);
 
-// //accessing the index of an array
-// console.log("second index", students[2]);
-// //adding element to the front of an array
-// students.unshift("Eiad");
-// console.log("this after the unshift method", students);
+//accessing the index of an array
+console.log("second index", students[2]);
+//adding element to the front of an array
+students.unshift("Eiad");
+console.log("this after the unshift method", students);
 
-// //using the indexOf to find a specific person to remove
-// const indexOfDoreen = students.indexOf("Doreen");
-// console.log("Index of Doreen", indexOfDoreen);
+//using the indexOf to find a specific person to remove
+const indexOfDoreen = students.indexOf("Doreen");
+console.log("Index of Doreen", indexOfDoreen);
 
-// //using the index that we found of Doreen, removing with splice
-// students.splice(indexOfDoreen, 1, "Marcelo");
-// console.log("After the splice removes Doreen", students);
+//using the index that we found of Doreen, removing with splice
+students.splice(indexOfDoreen, 1, "Marcelo");
+console.log("After the splice removes Doreen", students);
 
-// //add not something simple to the array
-// students.push(["blah", "bluh", "bloh"]);
-// console.log("After pushing another array to our students array", students);
-// console.log(
-//   "the sixth element, and the second inside the sixth",
-//   students[6][1]
-// );
-// console.log("length of an array", students.length);
-// console.log(
-//   "the sixth element with the .length method",
-//   students[students.length - 1][2]
-// );
-// //storing an index in another variable
-// const thirdStudent = students[3];
-// console.log(
-//   "storing in another variable",
-//   thirdStudent,
-//   "here is the array still with the third student",
-//   students
-// );
+//add not something simple to the array
+students.push(["blah", "bluh", "bloh"]);
+console.log("After pushing another array to our students array", students);
+console.log(
+  "the sixth element, and the second inside the sixth",
+  students[6][1]
+);
+console.log("length of an array", students.length);
+console.log(
+  "the sixth element with the .length method",
+  students[students.length - 1][2]
+);
+//storing an index in another variable
+const thirdStudent = students[3];
+console.log(
+  "storing in another variable",
+  thirdStudent,
+  "here is the array still with the third student",
+  students
+);
 
-// //exercise example
-// //create a variable that is an array
-// const pizzaToppings = ["Pep", "bacon", "cheese"];
-// console.log("first variable", pizzaToppings);
-// pizzaToppings.push("pinapple");
-// pizzaToppings.unshift("mushrooms");
-// console.log("Added toppings", pizzaToppings);
-// pizzaToppings.pop();
-// pizzaToppings.shift();
-// pizzaToppings.splice(1, 1);
-// console.log("removed toppings", pizzaToppings);
-// const str = "Elisa is, the best TA!";
-// const arr = str.split(",");
-// console.log("our array after split", arr);
+//exercise example
+//create a variable that is an array
+const pizzaToppings = ["Pep", "bacon", "cheese"];
+console.log("first variable", pizzaToppings);
+pizzaToppings.push("pinapple");
+pizzaToppings.unshift("mushrooms");
+console.log("Added toppings", pizzaToppings);
+pizzaToppings.pop();
+pizzaToppings.shift();
+pizzaToppings.splice(1, 1);
+console.log("removed toppings", pizzaToppings);
+const str = "Elisa is, the best TA!";
+const arr = str.split(",");
+console.log("our array after split", arr);
 
-//functions
+//<===================== functions ==============================>
 //es-5 syntax (older way)
 //variable example outside a function
 const TA = "Elisa";
