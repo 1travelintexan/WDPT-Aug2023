@@ -75,7 +75,8 @@ console.log("our array after split", arr);
 
 //<===================== functions ==============================>
 //es-5 syntax (older way)
-//variable example outside a function
+//variable example outside a function (accessible inside functions bc it is globally scoped)
+//variables inside a function are only accessible in said function
 const TA = "Elisa";
 function addFunction(number1, number2) {
   console.log("add function", number1 + number2);
