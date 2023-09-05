@@ -1,78 +1,78 @@
 // //this makes sure that the js file is linked to the html file
-// console.log("hey I am linked");
-// //syntax ex
-// //setTimeout(   ()=>{},  1000) takes two arguments one is a function and the other a time in milliseconds
-// //set timeout example runs just once
-// setTimeout(() => {
-//   let promptResponse = prompt("Enter your name");
-//   console.log("you typed this in the prompt", promptResponse);
-// }, 3000);
+console.log("hey I am linked");
+//syntax ex
+//setTimeout(   ()=>{},  1000) takes two arguments one is a function and the other a time in milliseconds
+//set timeout example runs just once
+setTimeout(() => {
+  let promptResponse = prompt("Enter your name");
+  console.log("you typed this in the prompt", promptResponse);
+}, 3000);
 
 // //setInterval example, this runs forever until stop it
-// let counter = 0;
-// let intervalId = setInterval(() => {
-//   console.log("this is the set interval ex", intervalId);
-//   counter++;
-//   if (counter > 5) {
-//     clearInterval(intervalId);
-//   }
-// }, 1000);
+let counter = 0;
+let intervalId = setInterval(() => {
+  console.log("this is the set interval ex", intervalId);
+  counter++;
+  if (counter > 5) {
+    clearInterval(intervalId);
+  }
+}, 1000);
 
 // keyword for today is anonymous arrow function!!!
 
 //.map( ) example
 const students = ["yildiz", "eiad", "dinah", "Chloe", "dinah", "Ian", "Doreen"];
 //
-// const mappedStudents = students.map((student, index) => {
-//   const firstLetter = student[0].toUpperCase();
-//   const uppercasedName = firstLetter + student.slice(1);
-//   //   console.log(
-//   //     "Here is the current element",
-//   //     student,
-//   //     "and their index is,",
-//   //     index
-//   //   );
-//   return uppercasedName;
-// });
-// console.log("here is the mapped students variable", mappedStudents);
+const mappedStudents = students.map((student, index) => {
+  const firstLetter = student[0].toUpperCase();
+  const uppercasedName = firstLetter + student.slice(1);
+  console.log(
+    "Here is the current element",
+    student,
+    "and their index is,",
+    index
+  );
+  return uppercasedName;
+});
+console.log("here is the mapped students variable", mappedStudents);
 
 // //.filter example
-// const filteredStudents = students.filter((people, i, theWholeArray, fourth) => {
-//   console.log(
-//     "current element",
-//     people,
-//     "index",
-//     i,
-//     "The whole array",
-//     theWholeArray,
-//     "here is the fouth",
-//     fourth
-//   );
-//   //in filter you need to give a condition that when its true, you return something
-//   if (people !== "dinah") {
-//     return true;
-//   }
-// });
+const filteredStudents = students.filter((people, i, theWholeArray, fourth) => {
+  console.log(
+    "current element",
+    people,
+    "index",
+    i,
+    "The whole array",
+    theWholeArray,
+    "here is the fouth",
+    fourth
+  );
+  //in filter you need to give a condition that when its true, you return something
+  if (people !== "dinah") {
+    return true;
+  }
+});
 
 // //oneliner example of a filter
-// // const filteredStudents = students.filter(
-// //   (currentStudent) => currentStudent !== "eiad"
-// // );
-// console.log("Here are our filtered students", filteredStudents);
+// const filteredStudents = students.filter(
+//   (currentStudent) => currentStudent !== "eiad"
+// );
+console.log("Here are our filtered students", filteredStudents);
 
-//.reduce method
+// .reduce method
 // .reduce takes two arguments, not just one like the others
 // first argument is always called the accumulator, and second is the current element
-// const numberOfAllLetters = students.reduce((acc, curr) => {
-//   return acc + curr.length;
-// }, 0);
-// const avgLengthOfNames = numberOfAllLetters / students.length;
-// console.log(
-//   "here is the number of letters",
-//   numberOfAllLetters,
-//   "here is the avg length of names",
-//   avgLengthOfNames.toFixed(2)
-// );
+const numberOfAllLetters = students.reduce((acc, curr) => {
+  return acc + curr.length;
+}, 0);
+const avgLengthOfNames = numberOfAllLetters / students.length;
+console.log(
+  "here is the number of letters",
+  numberOfAllLetters,
+  "here is the avg length of names",
+  avgLengthOfNames.toFixed(2)
+);
 
 // -Use .map to log only the students first and family name in an array
 // -Use .map to console.log `<firstName> <familyName> belongs to house <house>`
