@@ -12,12 +12,9 @@
   <h6>Patronus: Student has no Patronus Charm</h6>
 {{/unless}}
 
-{{! loops example }}
+{{! loops example with partials}}
 {{#each arrayOfChars}}
-  <div class="card">
-    <img src="{{this.image}}" alt="{{this.name}}" />
-    <h6>{{this.name}}</h6>
-  </div>
+  {{> charCard this}}
 {{/each}}
 
 <h3>Spells:</h3>

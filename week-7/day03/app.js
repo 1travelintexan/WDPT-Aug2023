@@ -11,7 +11,7 @@ app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "public")));
 
 //this tells the server that you are using partials, or templates for pages
-hbs.registerPartials(path.join(__dirname, "views", "partials"));
+hbs.registerPartials(__dirname + "/views/partials");
 //routes
 app.get("/", async (req, res) => {
   try {
@@ -45,6 +45,11 @@ app.get("/", async (req, res) => {
 });
 app.get("/single-character", (req, res) => {
   res.render("single-character.hbs");
+});
+//bonus examle of req.params
+app.get("/pizza/:id", (req, res) => {
+  console.log("params", req.params.id);
+  res.render("pizza.hbs");
 });
 
 app.listen(5000, () => {
