@@ -1,0 +1,22 @@
+{{! basic variable use }}
+<h2>{{characterName}}'s Page</h2>
+{{! If and else statement }}
+{{#if house}}
+  <h4>House: {{house}}</h4>
+{{else}}
+  <h4>House: Student has no house yet</h4>
+{{/if}}
+{{! Unless statement }}
+{{#unless patronus}}
+  <h6>Patronus: Student has no Patronus Charm</h6>
+{{/unless}}
+
+{{! loops example }}
+{{#each arrayOfChars}}
+  <p>Character: {{this}}</p>
+{{/each}}
+
+<h3>Spells:</h3>
+{{#each arrayOfSpells}}
+  <h6>Spell Name: {{this.name}}</h6>
+{{/each}}

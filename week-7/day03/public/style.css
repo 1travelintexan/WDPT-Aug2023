@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(2, 145, 145);
+  margin: 0;
+}
+.main-body {
+  min-height: 80vh;
+}
+.navbar {
+  background-color: rgb(77, 251, 251);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(1, 58, 107);
+}
+.footer {
+  background-color: rgb(77, 251, 251);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
