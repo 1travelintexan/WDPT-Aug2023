@@ -1,6 +1,10 @@
 body {
   background-color: rgb(2, 145, 145);
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-body {
   min-height: 80vh;
@@ -19,4 +23,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card {
+  width: 20vw;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 50px rgb(15, 15, 15);
+}
+.card img {
+  width: 80%;
 }

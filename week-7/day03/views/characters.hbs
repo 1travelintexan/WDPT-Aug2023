@@ -1,10 +1,11 @@
 {{! basic variable use }}
-<h2>{{characterName}}'s Page</h2>
+{{test}}
+<h2>{{schoolName}}'s Page</h2>
 {{! If and else statement }}
 {{#if house}}
   <h4>House: {{house}}</h4>
 {{else}}
-  <h4>House: Student has no house yet</h4>
+  <h4>House: There are no houses yet</h4>
 {{/if}}
 {{! Unless statement }}
 {{#unless patronus}}
@@ -13,7 +14,10 @@
 
 {{! loops example }}
 {{#each arrayOfChars}}
-  <p>Character: {{this}}</p>
+  <div class="card">
+    <img src="{{this.image}}" alt="{{this.name}}" />
+    <h6>{{this.name}}</h6>
+  </div>
 {{/each}}
 
 <h3>Spells:</h3>
