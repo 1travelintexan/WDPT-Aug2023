@@ -34,6 +34,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
   const foundUser = await UserModel.findOne({ email: req.body.email });
   //check if there is a user with the email
   //if no user then show the login page again with message
