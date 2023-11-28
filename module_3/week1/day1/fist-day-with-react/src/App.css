@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: aqua;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+#nav-h2 {
+  color: rgb(0, 81, 151);
+}
