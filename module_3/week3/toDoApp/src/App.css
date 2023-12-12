@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 80vh;
+  background-color: antiquewhite;
+}
+.todo-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+.todo-row h4 {
+  margin: 20px;
+}
+.todo-row button {
+  margin: 20px;
+}
+.done {
+  text-decoration: line-through;
+}
