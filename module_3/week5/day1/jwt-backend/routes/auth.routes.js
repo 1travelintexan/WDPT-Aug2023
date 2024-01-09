@@ -114,7 +114,6 @@ router.post("/login", (req, res, next) => {
     })
     .catch((err) => next(err)); // In this case, we send error handling to the error handling middleware.
 });
-
 //GET /verify to check if the auth token is valid
 router.get("/verify", (req, res) => {
   const getToken = (aRequest) => {
