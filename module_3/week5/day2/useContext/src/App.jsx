@@ -4,6 +4,7 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import IsPrivate from "./components/IsPrivate";
+import Outlet from "./components/Outlet";
 function App() {
   return (
     <>
@@ -15,7 +16,9 @@ function App() {
           path="/profile"
           element={
             <IsPrivate>
-              <Profile />
+              <Outlet>
+                <Profile />
+              </Outlet>
             </IsPrivate>
           }
         />

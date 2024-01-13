@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [form, setForm] = useState({
@@ -28,6 +28,7 @@ function SignUp() {
   return (
     <>
       <h1>Signup with Us!</h1>
+      <Link to="/login">Login</Link>
       <form onSubmit={handleSignUp}>
         <label>
           Name:
